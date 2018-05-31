@@ -1,0 +1,38 @@
+@mixin button-default {
+	border: 1px solid;
+	cursor: pointer;
+	display: table;
+	font-weight: $light-weight;
+	margin: 0 auto;
+	padding: 8px 24px;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+}
+
+@mixin button() {
+	@include button-default;
+}
+
+@mixin clear-button {
+	@include button-default;
+	background-color: transparent;
+	color: $text;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+@mixin button-colors($background:$white,$color:$accent) {
+	background-color: $background;
+	color: $color;
+
+	&:focus,
+	&:hover {
+		background-color: $color;
+		border-color: $background;
+		color: $background;
+	}
+}
+

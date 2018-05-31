@@ -1,0 +1,65 @@
+#menu-social .menu-item,
+.menu-item.social {
+	a {
+		border-radius: 100%;
+		width: 44px;
+		height: 44px;
+		line-height: 1;
+		padding: 0;
+		text-align: center;
+
+		span {
+			@include screen-reader-text;
+			padding-left: 0;
+		}
+	}
+
+	.icon {
+		width: 22px;
+		height: 22px;
+		top: 25%;
+		opacity: .75;
+		transition: .5s ease-in-out opacity;
+	}
+
+	&:hover .icon {
+		opacity: 1;
+	}
+
+	&.facebook a {
+		color: $facebook;
+	}
+
+	&.github a {
+		color: $github;
+	}
+
+	&.google a {
+		color: $google;
+	}
+
+	&.heart a {
+		color: #c42030;
+	}
+
+	&.instagram a {
+		color: $instagram;
+	}
+
+	&.linkedin a {
+		color: $linkedin;
+	}
+
+	&.pinterest a {
+		color: $pinterest;
+	}
+
+	&.twitter a {
+		color: $twitter;
+	}
+
+	&.youtube a {
+		color: $youtube;
+	}
+}
+

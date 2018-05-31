@@ -1,0 +1,92 @@
+button.sub-menu-toggle,
+.menu-toggle {
+	display: block;
+	visibility: visible;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: transparent;
+	transition: .4s all ease-in-out;
+}
+
+.menu-toggle {
+	border: none;
+	position: relative;
+	padding: 12px;
+	right: 0;
+	z-index: $sidr-z-index;
+	color: $white;
+	width: 100%;
+
+	.icon {
+		margin-right: 12px;
+	}
+
+	&:focus {
+		color: $white;
+	}
+
+	@media #{$mq-big} {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.genesis-nav-menu {
+	button.sub-menu-toggle {
+		border: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 15px;
+		z-index: $sub-menu-z-index;
+
+		&.pseudo {
+			position: relative;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	@media #{$mq-big} {
+		button.sub-menu-toggle {
+			padding: 22px 14px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&.pseudo {
+				display: block;
+				position: relative;
+				top: 0;
+				transform: none;
+
+				> .icon {
+					margin-left: 8px;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				background: none;
+			}
+		}
+
+		button.sub-menu-toggle,
+		a.sub-menu-toggle > {
+			.icon {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+
+	.sub-menu .sub-menu-toggle {
+		padding: 1em;
+	}
+}
+
+.activated > .icon {
+	color: $white;
+	transform: rotate(180deg);
+}
+

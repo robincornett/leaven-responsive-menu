@@ -1,0 +1,18 @@
+nav {
+	@include color-opacity($text, .9);
+	display: none;
+	position: relative;
+
+	> .wrap {
+		padding: 0;
+	}
+
+	&.pagination {
+		display: block;
+	}
+
+	@media #{$mq-big} {
+		display: block;
+	}
+}
+

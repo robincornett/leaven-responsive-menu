@@ -1,0 +1,44 @@
+li.menu-item.search {
+	display: none;
+
+	@media #{$mq-big} {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.icon {
+		position: absolute;
+		z-index: -1;
+		margin: 16px 0;
+		right: 0;
+		fill: white;
+	}
+}
+
+.search .search-form {
+	text-align: center;
+
+	input[type="search"] {
+		position: relative;
+		width: 1px;
+		border: none;
+		background-color: transparent;
+		font-size: $type-small;
+		cursor: pointer;
+		transition: width 500ms ease, background 400ms ease;
+	}
+
+	input[type="search"]:focus {
+		width: 250px;
+		outline: 0;
+		border: 1px solid $text-mid;
+		background-color: $white;
+		cursor: text;
+	}
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.genesis-nav-menu .search-form button[type="submit"] {
+	@include screen-reader-text;
+}
+

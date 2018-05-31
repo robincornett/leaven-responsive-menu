@@ -1,0 +1,5 @@
+@mixin svg($filename) {
+	background-image: url(images/#{$filename}.png);
+	background-image: none, url(images/#{$filename}.svg);
+}
+

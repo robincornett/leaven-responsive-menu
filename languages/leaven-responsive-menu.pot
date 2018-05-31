@@ -1,0 +1,17 @@
+# Copyright (C) 2018 a responsive menu proposal for the Genesis Framework
+# This file is distributed under the same license as the a responsive menu proposal for the Genesis Framework package.
+msgid ""
+msgstr ""
+"Project-Id-Version: a responsive menu proposal for the Genesis Framework\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/navigation.php:23, includes/navigation.php:24
+msgid "Menu"
+msgstr ""
+
+#: includes/navigation.php:25
+msgid "sub-menu toggle"
+msgstr ""

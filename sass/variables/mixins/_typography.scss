@@ -1,0 +1,7 @@
+@mixin italic($size: 1em) {
+	@if ($size != 1) {
+		font-size: $size;
+	}
+	font-style: italic;
+}
+
