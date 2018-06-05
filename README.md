@@ -18,6 +18,17 @@ This project consists of four elements:
 
 ## Frequently Asked Questions
 
+### How do I tell the theme about a mobile menu plugin?
+
+In the `leaven_get_navigation_localization_args` function, look for the `$desktop_only` variable. It's currently set to check for SuperSide Me:
+
+```php
+	// optional: set the menu script to perform on desktop only. set to false to use the mobile menu, too
+	$desktop_only = (bool) function_exists( 'supersideme_has_content' ) && supersideme_has_content();
+```
+
+If SuperSide Me is not active, it will be `false`. You can change this variable to anything you like, and check for any mobile menu plugin you prefer to use.
+
 ## Changelog
 
 ### 1.0.0
