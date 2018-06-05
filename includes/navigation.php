@@ -1,5 +1,8 @@
 <?php
 
+// Add support for Genesis accessibility (2.2.0), but not Superfish
+add_theme_support( 'genesis-accessibility', array( 'search-form', 'skip-links', 'headings' ) );
+
 add_action( 'wp_enqueue_scripts', 'leaven_responsive_navigation', 15 );
 /**
  * Responsive navigation.
