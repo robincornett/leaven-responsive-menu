@@ -92,7 +92,7 @@
 		var $buttons    = $( 'button[id^="mobile"]' ).attr( 'id' ),
 		    selector    = selectors.genesis + ' ' + selectors.submenuButton,
 		    genesisItem = selectors.genesis + ' ' + selectors.parentMenuItem;
-		_closeSubmenus( $( selectors.menuItem ) );
+		_closeSubmenus( $( selectors.genesis + ' ' + selectors.menuItem ) );
 		_maybeClose();
 		$( genesisItem + ',' + selector ).off();
 		$( selector ).on( 'click.leaven-subbutton', _submenuToggle );
