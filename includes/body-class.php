@@ -21,12 +21,14 @@ add_action( 'genesis_before', 'leaven_jsnojs', 1 );
  */
 function leaven_jsnojs() {
 	?>
-	<script type="text/javascript">//<![CDATA[
-		(function () {
-			var c = document.body.className;
-			c = c.replace( /no-js/, 'js' );
-			document.body.className = c;
-		})();
-		//]]></script>
+<script>
+//<![CDATA[
+(function(){
+var c = document.body.classList;
+c.remove( 'no-js' );
+c.add( 'js' );
+})();
+//]]>
+</script>
 	<?php
 }
