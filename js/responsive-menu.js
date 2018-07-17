@@ -280,7 +280,7 @@
 		}
 		$.each( leaven.params.menus, function ( key, menu ) {
 			if ( 'none' !== _getDisplayValue( buttons ) ) {
-				$( '.nav-' + menu + ' .menu > li' ).addClass( 'moved-item-' + menu ).appendTo( '.' + classes.mobile + ' ul.genesis-nav-menu' );
+				$( '.nav-' + menu + ' .menu > li' ).addClass( 'moved-item-' + menu ).appendTo( leaven.params.primary + ' ul.genesis-nav-menu' );
 				$( '.nav-' + menu ).hide();
 			} else {
 				$( '.nav-' + menu ).show();
